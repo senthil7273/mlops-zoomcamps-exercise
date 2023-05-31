@@ -1,0 +1,15 @@
+artifact_uri: file:///home/niranjana/week-02/mlruns/0/45485ce4aa794e8c968ddac672b65952/artifacts
+end_time: 1685480669616
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 45485ce4aa794e8c968ddac672b65952
+run_name: able-shrike-832
+run_uuid: 45485ce4aa794e8c968ddac672b65952
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1685480662222
+status: 3
+tags: []
+user_id: niranjana
