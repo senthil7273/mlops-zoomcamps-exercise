@@ -1,11 +1,11 @@
 variable feature_store_name {
     type = string
     description = "name of the feature store"
-    value = "cancer"
+    default = "cancer"
 }
 
 variable entity_type {
-    type = "string"
+    type = string
     description = "name of the entity type"
-    value = "geography"
+    default = "geography"
 }

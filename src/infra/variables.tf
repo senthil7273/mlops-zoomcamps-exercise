@@ -6,13 +6,12 @@ variable project_id {
 }
 
 variable region {
-    value = "europe-west-1"
+    type = string
+    default = "europe-west-1"
 }
 
 variable zone {
-    value = "europe-west-1b"
+    type = string
+    defaulr = "europe-west-1b"
 }
 
-output "region" {
-    value = var.region
-}
