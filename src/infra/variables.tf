@@ -7,11 +7,11 @@ variable project_id {
 
 variable region {
     type = string
-    default = "europe-west-1"
+    default = "europe-west1"
 }
 
 variable zone {
     type = string
-    default = "europe-west-1b"
+    default = "europe-west1-b"
 }
 

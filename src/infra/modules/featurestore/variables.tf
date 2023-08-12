@@ -13,5 +13,5 @@ variable entity_type {
 variable region { 
     type = string
     description = "region of the feature store"
-    default = "europe-west-1"
+    default = "europe-west1"
 }
