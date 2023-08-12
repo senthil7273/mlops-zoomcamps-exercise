@@ -4,7 +4,7 @@ resource "google_vertex_ai_featurestore" "featurestore" {
   force_destroy = true
 
   online_serving_config {
-    fixed_node_count = 1
+    fixed_node_count = 0
   }
 }
 
