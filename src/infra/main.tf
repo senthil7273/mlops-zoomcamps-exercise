@@ -6,5 +6,4 @@ provider "google" {
 
 module "featurestore" {
   source = "./modules/featurestore"
-  region = var.region
 }
