@@ -9,3 +9,9 @@ variable entity_type {
     description = "name of the entity type"
     default = "geography"
 }
+
+variable region { 
+    type = string
+    description = "region of the feature store"
+    default = "europe-west-1"
+}
