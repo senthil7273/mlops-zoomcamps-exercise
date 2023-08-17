@@ -1,7 +1,7 @@
 variable project_id {
     type = string
     description = "id of the project configured in GCP"
-    default = "nifty-vault-387021"
+    default = "sincere-cacao-396220"
     nullable = false
 }
 
