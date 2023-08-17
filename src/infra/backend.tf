@@ -1,6 +1,6 @@
 terraform {
  backend "gcs" {
-   bucket  = "iac-mlops"
+   bucket  = "sincere-cacao-396220-tfstate"
    prefix  = "terraform/state"
  }
 }
