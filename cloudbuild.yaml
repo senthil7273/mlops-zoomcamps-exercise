@@ -22,6 +22,7 @@ steps:
       terraform init
     else
       echo "** no folder found - src/infra **"
+    fi
 # [END tf-init]
 
 # [START tf-plan]
@@ -37,6 +38,7 @@ steps:
       terraform plan
     else
       echo "** no folder found - src/infra **"
+    fi
 # [END tf-plan]
 
 # [START tf-apply]
@@ -52,4 +54,5 @@ steps:
       terraform apply
     else
       echo "** no folder found - src/infra **"
+    fi
 # [END tf-apply]
