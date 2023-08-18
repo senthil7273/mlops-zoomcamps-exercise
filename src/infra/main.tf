@@ -11,6 +11,7 @@ provider "google" {
 
 module "storage" {
   source = "./modules/storage"
+  depends_on = [ module.api-permission ]
 }
 
 module "api-permission" {
@@ -19,4 +20,5 @@ module "api-permission" {
 
 module "account" {
   source = "./modules/account"
+  depends_on = [ module.api-permission ]
 }
