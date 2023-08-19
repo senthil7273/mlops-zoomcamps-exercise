@@ -1,3 +1,3 @@
 variable "bucket_region" { 
-    default = "eu-west1"
+    default = "europe-west1"
 }
