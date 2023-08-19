@@ -10,5 +10,6 @@ pwd
 gcloud functions deploy init_pipeline --gen2 --source=.  --runtime=python39 \
      --set-env-vars PROJECT=${PROJECT_ID},BUCKET=${BUCKET}, \
      --trigger-resource="${BUCKET}"  \
-     --trigger-event=google.storage.object.finalize
+     --trigger-event=google.storage.object.finalize \
+     --region=${REGION}
      
