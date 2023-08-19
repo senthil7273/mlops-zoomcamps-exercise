@@ -3,6 +3,10 @@ resource "google_project_service" "compute-permission" {
   disable_on_destroy = true
 }
 
+resource "google_project_service" "resource-manager-permission" {
+  service = "cloudresourcemanager.googleapis.com"
+  disable_on_destroy = true
+}
 resource "google_project_service" "gcr-permission" {
   service = "containerregistry.googleapis.com"
   disable_on_destroy = true
