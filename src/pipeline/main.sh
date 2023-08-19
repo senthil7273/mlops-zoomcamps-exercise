@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 echo "** setting environment variables **"
 PROJECT_ID=$(gcloud config get-value project)
 BUCKET="ml-staging-mlzoomcamp"
