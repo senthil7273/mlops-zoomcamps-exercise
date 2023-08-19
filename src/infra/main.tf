@@ -11,7 +11,6 @@ provider "google" {
 
 module "storage" {
   source = "./modules/storage"
-  region = var.region
   depends_on = [ module.api-permission ]
 }
 
