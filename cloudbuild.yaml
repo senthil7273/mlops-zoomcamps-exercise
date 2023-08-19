@@ -60,6 +60,8 @@ steps:
 # [START init pipeline]
 
 - id: 'pipeline'
-  name: 'bash'
+  name: 'gcr.io/cloud-builders/gcloud'
+  entrypoint: 'bash'
   args: ['./src/pipeline/main.sh']
 # [END init Pipeline]
+
