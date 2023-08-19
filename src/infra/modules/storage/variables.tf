@@ -1,4 +1,4 @@
 variable "bucket_region" { 
-    type="string"
+    type = string
     default = "europe-west1"
 }
