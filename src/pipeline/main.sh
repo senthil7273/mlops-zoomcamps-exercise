@@ -6,7 +6,9 @@ REGION="europe-west1"
 PIPELINES_HOST=$1
 
 echo "** initiating cloud function **"
-gcloud functions deploy init_pipeline --source ./ --runtime python39 \
+pwd 
+gcloud functions deploy init_pipeline --gen2 --source=.  --runtime=python39 \
      --set-env-vars PROJECT=${PROJECT_ID},BUCKET=${BUCKET}, \
      --trigger-resource="${BUCKET}"  \
      --trigger-event=google.storage.object.finalize
+     
