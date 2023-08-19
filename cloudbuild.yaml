@@ -61,5 +61,5 @@ steps:
 
 - id: 'pipeline'
   name: 'bash'
-  args: ['./pipeline/main.sh']
+  args: ['./src/pipeline/main.sh']
 # [END init Pipeline]
