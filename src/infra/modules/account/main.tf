@@ -1,5 +1,5 @@
 resource "google_service_account" "mlops-sa" {
-    project = var.project_id_local
+    project = var.project_id
     account_id = "mlops-sa"
     display_name = "mlops-service-account"
 }
