@@ -29,7 +29,7 @@ def init_pipeline():
 
     PIPELINES_HOST = os.environ.get('PIPELINES_HOST', "Environment variable PIPELINES_HOST not set")
     PROJECT_ID = os.environ.get('PROJECT_ID', " PROJECT not set")
-    ML_BUCKET = os.environ.get('ML_BUCKET', " BUCKET not set")
+    ML_BUCKET = os.environ.get('BUCKET', " BUCKET not set")
     LOCATION = os.environ.get('LOCATION', " BUCKET not set")
     aip.init(
         project=PROJECT_ID,
@@ -41,8 +41,8 @@ def init_pipeline():
     job = pipeline_jobs.PipelineJob(
     display_name='cancer-pipeline',
     template_path="pipeline.json",
-    pipeline_root = f"gs://{LOCATION}",
-    location=REGION,
+    pipeline_root = f"gs://{ML_BUCKET}",
+    location=LOCATION,
     enable_caching=True)
 
     job.run()
