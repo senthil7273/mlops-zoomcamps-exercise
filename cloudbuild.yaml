@@ -51,7 +51,7 @@ steps:
     if [ -d "src/infra/" ]; then
       echo "** executing tf apply **"
       cd src/infra
-      terraform apply
+      terraform apply -auto-approve
     else
       echo "** no folder found - src/infra **"
     fi
