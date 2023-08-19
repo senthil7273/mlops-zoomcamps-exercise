@@ -6,24 +6,24 @@ resource "google_service_account" "mlops-sa" {
 
 resource "google_project_iam_binding" "ai-user" {
   project = var.project_id
-  role = "aiplatform.user"
+  role = "roles/aiplatform.user"
   members = ["serviceAccount:${google_service_account.mlops-sa.email}"]
 }
 
 resource "google_project_iam_binding" "s3-view-file" {
   project = var.project_id
-  role = "storage.objectViewer"
+  role = "roles/storage.objectViewer"
   members = ["serviceAccount:${google_service_account.mlops-sa.email}"]
 }
 
 resource "google_project_iam_binding" "s3-create-file" {
   project = var.project_id
-  role = "storage.objectCreator"
+  role = "roles/storage.objectCreator"
   members = ["serviceAccount:${google_service_account.mlops-sa.email}"]
 }
 
 resource "google_project_iam_binding" "s3-admin" {
   project = var.project_id
-  role = "storage.objectAdmin"
+  role = "roles/storage.objectAdmin"
   members = ["serviceAccount:${google_service_account.mlops-sa.email}"]
 }
