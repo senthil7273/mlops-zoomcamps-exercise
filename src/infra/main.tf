@@ -20,5 +20,6 @@ module "api-permission" {
 
 module "account" {
   source = "./modules/account"
+  project_id = var.project_id
   depends_on = [ module.api-permission ]
 }
