@@ -12,6 +12,11 @@ resource "google_project_service" "gcr-permission" {
   disable_on_destroy = true
 }
 
+resource "google_project_service" "eventarc-permission" {
+  service = "eventarc.googleapis.com"
+  disable_on_destroy = true
+}
+
 resource "google_project_service" "iam-permission" {
   service = "iam.googleapis.com"
   disable_on_destroy = true
