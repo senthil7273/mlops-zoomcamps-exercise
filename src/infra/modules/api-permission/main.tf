@@ -11,6 +11,10 @@ resource "google_project_service" "gcr-permission" {
   service = "containerregistry.googleapis.com"
   disable_on_destroy = true
 }
+resource "google_project_service" "run-permission" {
+  service = "run.googleapis.com"
+  disable_on_destroy = true
+}
 
 resource "google_project_service" "eventarc-permission" {
   service = "eventarc.googleapis.com"
